@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+input,
+label {
+  display: block;
+  padding: 5px;
+}
+label {
+  color: green;
+  font-size: large;
+}
+input {
+  width: 100%;
+  margin-top: 5px;
+}
+.button {
+  margin: 15px auto 0 auto;
+  width: 40%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: large;
+}
+form {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid black;
+}
