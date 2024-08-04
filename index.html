@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web to Lead Form</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- get this script key from web to lead generate form in org -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -14,6 +16,12 @@
       method="POST"
       onsubmit="beforesumbit()"
     >
+      <!-- from generated org line no 20 -->
+      <input
+        type="hidden"
+        name="captcha_settings"
+        value='{"keyname":"webtoleadform","fallback":"true","orgId":"00DIR000001ZNp0","ts":""}'
+      />
       <input type="hidden" name="oid" value="00DIR000001ZNp0" />
       <input
         type="hidden"
@@ -53,7 +61,11 @@
 
       <label for="date">Create Date</label>
       <input type="date" required="true" class="inputdate" /><br />
-
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LciZx8qAAAAAHqSZTXB8n37N9uktRkRp_oIgi1D"
+      ></div>
+      <br />
       <input type="submit" name="submit" class="button" />
     </form>
   </body>
